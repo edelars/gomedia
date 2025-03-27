@@ -241,6 +241,17 @@ func GetPPSId(pps []byte) uint64 {
 	return bs.ReadUE()
 }
 
+func GetH264ResolutionSafety(sps []byte) (width uint32, height uint32) {
+	defer func() {
+		if r := recover(); r != nil {
+			width = 0
+			height = 0
+		}
+	}()
+	width, height = GetH264Resolution(sps)
+	return width, height
+}
+
 // https://stackoverflow.com/questions/12018535/get-the-width-height-of-the-video-from-h-264-nalu
 // int Width = ((pic_width_in_mbs_minus1 +1)*16) - frame_crop_right_offset *2 - frame_crop_left_offset *2;
 // int Height = ((2 - frame_mbs_only_flag)* (pic_height_in_map_units_minus1 +1) * 16) - (frame_crop_bottom_offset* 2) - (frame_crop_top_offset* 2);
