@@ -1,14 +1,14 @@
 # gomedia
  mpeg-ts,mpeg-ps,flv,mp4,rtmp muxer/demuxer
- 
+
 ## Installation
 ```
-go get github.com/yapingcat/gomedia
+go get github.com/edelars/gomedia
 ```
 
 
 ## H264/H265/AAC/VP8/OPUS/MP3
- [USAGE](https://github.com/yapingcat/gomedia/blob/main/go-codec/README.md)
+ [USAGE](https://github.com/edelars/gomedia/blob/main/go-codec/README.md)
   - decode sps/pps/vps/slice header
   - decode HEVCDecoderConfigurationRecord/AVCDecoderConfigurationRecord/AAC-ADTS/AudioSpecificConfiguration
   - encode HEVCDecoderConfigurationRecord/AVCDecoderConfigurationRecord/AAC-ADTS/AudioSpecificConfiguration
@@ -30,44 +30,44 @@ go get github.com/yapingcat/gomedia
     - MP3
 
 ## mpeg-ps
-  - mux 
+  - mux
     - H264
     - H265
     - AAC
     - G711A
     - G711U
-  - demux 
+  - demux
     - H264
     - H265
     - AAC
     - G711A
     - G711U
-   
+
 ## flv
-  - mux 
+  - mux
     - H264
     - H265
     - AAC
     - G711A
     - G711U
     - MP3
-  - demux 
+  - demux
     - H264
     - H265
     - AAC
     - G711A
     - G711U
     - MP3
-  
+
 ## mp4
-  - demux 
+  - demux
     - H264
     - H265
     - AAC
     - G711A
     - G711U
     - MP3
-  - mux 
+  - mux
     - H264
     - H265
     - AAC
@@ -78,13 +78,13 @@ go get github.com/yapingcat/gomedia
 
 
 ## fmp4
-  - demux 
+  - demux
     - H264
     - H265
     - AAC
     - G711A
     - G711U
-  - mux 
+  - mux
     - H264
     - H265
     - AAC
@@ -92,29 +92,22 @@ go get github.com/yapingcat/gomedia
     - G711U
 
 ## ogg
-  - demux 
+  - demux
     - OPUS
     - VP8
-  
+
 ## rtmp
-  
-  [USAGE](https://github.com/yapingcat/gomedia/blob/main/go-rtmp/README.md)
-  
+
+  [USAGE](https://github.com/edelars/gomedia/blob/main/go-rtmp/README.md)
+
   - support client/server
   - support play/publish
   - support h264/h265/aac/g711a/g711u/mp3
-  
-  
+
+
 ## rtsp
 
   - support client/server(rfc2326)
   - support basic/digest
   - support rtp(rfc3550)
   - support g711/aac/h264/h265
- 
-
-
-
-
-
-  

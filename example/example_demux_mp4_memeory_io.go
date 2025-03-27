@@ -7,7 +7,7 @@ import (
 	"io"
 	"os"
 
-	"github.com/yapingcat/gomedia/go-mp4"
+	"github.com/edelars/gomedia/go-mp4"
 )
 
 type cacheReaderSeeker struct {

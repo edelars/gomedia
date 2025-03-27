@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/yapingcat/gomedia/go-codec"
-	"github.com/yapingcat/gomedia/go-flv"
+	"github.com/edelars/gomedia/go-codec"
+	"github.com/edelars/gomedia/go-flv"
 )
 
 func onHttpFlv(w http.ResponseWriter, r *http.Request) {
