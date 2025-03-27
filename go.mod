@@ -1,3 +1,3 @@
-module github.com/yapingcat/gomedia
+module github.com/edelars/gomedia
 
-go 1.16
+go 1.24.1
